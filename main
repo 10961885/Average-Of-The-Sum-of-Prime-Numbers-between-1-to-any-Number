@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main(){
+
+    int i, beg, last, sum=0, countNum=0;
+    float average;
+
+    printf("Enter the first number of range : ");
+    scanf("%d",&beg);
+
+    printf("Enter the last number of range : ");
+    scanf("%d",&last);
+
+ 
+    for(i=beg;i<=last;i++){
+  
+        sum+=i;
+  
+        countNum++;
+    }
+ 
+    average = (float)sum/countNum;
+
+    printf("The average is : %.3f",average);
+
+    return 0;
+}
